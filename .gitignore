@@ -6,3 +6,5 @@ __pycache__/
 #proj specific items
 assignments/
 config.py
+sg_venues.csv
+sorted_venues.csv
