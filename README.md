@@ -1,9 +1,9 @@
 # Exploring Singapore Neighborhoods
 
 ## Introduction
-With Covid-19 catalysing adoption of remote work, an even larger proportion of our time is spent at home compared to pre-Covid times. In Singapore, most young adults of ages between 25~35 will be preoccupied with getting an apartment of their own. Aparmtment buying, has several factors involved, numero uno being price. However price aside, location is also an import consideration, especially for remote workers who will be having lunches, evening jogs, coffee breaks around their residential area.
+With Covid-19 catalysing adoption of remote work, an even larger proportion of our time is spent at home compared to pre-Covid times. In Singapore, most young adults of ages between 25~35 will be preoccupied with getting an apartment of their own. Apartment buying, has several factors involved, numero uno being price. However price aside, location is also an import consideration, especially for remote workers who will be having lunches, evening jogs, coffee breaks around their residential area.
 
-In this project, I'll be exploring the city state, Singapore, and attempting to perform a clustering of neighborhoods, in hopes that this information may be useful for any young adults looking to buy an aparmtment in future. At the very least, I know it may be some good reference for me who has yet to own any apartments.
+In this project, I'll be exploring the city state, Singapore, and attempting to perform a clustering of neighborhoods, in hopes that this information may be useful for any young adults looking to buy an apartment in future. At the very least, I know it may be some good reference for me who has yet to own any apartments.
 
 ## Data sources
 To tackle the area of interest, we'll be gathering the following data:
@@ -63,9 +63,9 @@ Cluster 6: Neighborhoods with nature trail being the most common venue.<br>
 Cluster 7: Neighborhoods where the most common venues are a mix-up between coffeeshop, foodcourt, fastfood restaurant and chinese restaurants. In fact, even more than the other clusters, most of the top 10 spots seem to be occupied by something food related and in contrast to other clusters, ethnic ones like Chinese, Malay, Indian restaurants feature more prominently in this cluster.<br>
 
 ## Discussion
-While unsupervised learning algorithms such as K-means clustering work great in helping us recognize patterns we might not have thought of, it is hard to validate their models, precisely because there's no right or wrong. In this project, I've chosen the simple elbow method to help choose hypyerparameters. There are other more proposed ways of evaluating K-means models<sup>5</sup>.
+While unsupervised learning algorithms such as K-means clustering work great in helping us recognize patterns we might not have thought of, it is hard to validate their models, precisely because there's no right or wrong. In this project, I've chosen the simple elbow method to help choose hyperparameters. There are other proposed ways of evaluating K-means models<sup>5</sup>.
 
-Furthermore, for a more comprehensive overview, we could consider including price as an additional dimeonsion in future. This does not necessarily have to be the price of houses, but could be the price of venues, such as how costly the venues are, in particular for dining establishments. However, more isn't necessarily good. In this project, we ended up with over 300 features which made interpreting hard. We could consider some dimension reducing methods in future.
+Furthermore, for a more comprehensive overview, we could consider including price as an additional dimension in future. This does not necessarily have to be the price of houses, but could be the price of venues, such as how costly the venues are, in particular for dining establishments. However, more isn't necessarily good. In this project, we ended up with over 300 features which made interpreting hard. We could consider some dimension reducing methods in future.
 
 ## Conclusion
 Singapore truly is a food haven, where a majority of the clusters are defined by food. Though after performing clustering, patterns emerge. Some smaller-sized clusters are closer to nature, others have a more eclectic mix of venues. We hope that this offers an alternate view on choosing a suitable place of residence by leveraging on data.
