@@ -39,7 +39,7 @@ We move on to use these venues in helping us to cluster Singapore neighborhoods 
 
 ![image](https://user-images.githubusercontent.com/65491089/123555950-5fbcd880-d7bb-11eb-8e6e-343f0bfc135d.png)
 
-Though we hope to employ the elbow method in helping to select the optimal number of clusters, from the above graph, it is actually pretty hard to tell definitively where the elbow point but we'll select 8 as the optimal number of clusters.
+Though we hope to employ the elbow method in helping to select the optimal number of clusters, from the above graph, it is actually pretty hard to tell definitively where the elbow point is but we'll select 8 as the number of clusters.
 
 ## Results
 Setting no. of clusters as 8, we arrive at the following cluster distribution.
@@ -63,9 +63,11 @@ Cluster 6: Neighborhoods with nature trail being the most common venue.<br>
 Cluster 7: Neighborhoods where the most common venues are a mix-up between coffeeshop, foodcourt, fastfood restaurant and chinese restaurants. In fact, even more than the other clusters, most of the top 10 spots seem to be occupied by something food related and in contrast to other clusters, ethnic ones like Chinese, Malay, Indian restaurants feature more prominently in this cluster.<br>
 
 ## Discussion
-While unsupervised learning algorithms such as K-means clustering work great in helping us recognize patterns we might not have thought of, it is hard to validate their models, precisely because there's no right or wrong. In this project, I've chosen the simple elbow method to help choose hyperparameters. There are other proposed ways of evaluating K-means models<sup>5</sup>.
+While unsupervised learning algorithms such as K-means clustering work great in helping us recognize patterns we might not have thought of, it is hard to validate their models, because there's no response variable indicating if we've classified it correctly or wrongly. As such, it is similarly difficult for hyperparameter tuning. In this project, I've chosen the simple elbow method to help choose hyperparameters. There are other proposed ways of evaluating K-means models<sup>5</sup>.
 
-Furthermore, for a more comprehensive overview, we could consider including price as an additional dimension in future. This does not necessarily have to be the price of houses, but could be the price of venues, such as how costly the venues are, in particular for dining establishments. However, more isn't necessarily good. In this project, we ended up with over 300 features which made interpreting hard. We could consider some dimension reducing methods in future.
+Our methodology on data extraction could also use some refining. In this study, we use 1 coordinate for each neighborhood to search for venues within 1km of said coordinates. However from the maps above, we can easily see that the neighborhoods do not all have the same size. For small neighborhoods, the current approach could suffice but for large neighborhoods, the venues contained within would end up being underrepresented. A better approach could be generating coordinates at regular intervals and using Shapely<sup>6</sup> to check which neighborhood the generated coordinates lie in. With this approach, larger neighborhoods would have more starting coordinates, hence generating results more representative of said neighborhood.
+
+For a more comprehensive overview, we could also consider including price as an additional dimension in future analysis. This does not necessarily have to be the price of houses, but could be the price of venues, such as how costly the venues are, in particular for dining establishments. However, more isn't necessarily good. In this project, we ended up with over 300 features which made interpretation hard. We could consider some dimension reducing methods in future.
 
 ## Conclusion
 Singapore truly is a food haven, where a majority of the clusters are defined by food. Though after performing clustering, patterns emerge. Some smaller-sized clusters are closer to nature, others have a more eclectic mix of venues. We hope that this offers an alternate view on choosing a suitable place of residence by leveraging on data.
@@ -76,4 +78,5 @@ Singapore truly is a food haven, where a majority of the clusters are defined by
 3. https://www.singstat.gov.sg/find-data/search-by-theme/population/population-and-population-structure/latest-data
 4. https://developer.foursquare.com/docs/places-api/
 5. https://medium.com/@ODSC/assessment-metrics-for-clustering-algorithms-4a902e00d92d
+6. https://autogis-site.readthedocs.io/en/latest/notebooks/L3/02_point-in-polygon.html
 
