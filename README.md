@@ -3,7 +3,7 @@
 ## Introduction
 With Covid-19 catalysing adoption of remote work, an even larger proportion of our time is spent at home compared to pre-Covid times. In Singapore, most young adults of ages between 25~35 will be preoccupied with getting an apartment of their own. Apartment buying, has several factors involved, numero uno being price. However price aside, location is also an important consideration, especially for remote workers who will be having lunches, evening jogs, coffee breaks around their residential area.
 
-In this project, I'll be exploring the city state, Singapore, and attempting to perform a clustering of neighborhoods, in hopes that this information may be useful for any young adults looking to buy an apartment in future. At the very least, I know it may be some good reference for me who has yet to own any apartments.
+In this project, I'll be exploring the city state, Singapore, and attempting to perform a clustering of neighborhoods, in hopes that this information may be useful for any young adults looking to buy an apartment in future. At the very least, I know it may be some good reference for me.
 
 ## Data sources
 To tackle the area of interest, we'll be gathering the following data:
